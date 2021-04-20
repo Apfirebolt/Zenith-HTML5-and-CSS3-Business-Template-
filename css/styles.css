@@ -632,17 +632,20 @@ img {
 
 .form-control{
     border-radius: 3px;
-    height: 50px;
-    padding-left: 15px;
-    border: 1px solid#ddd;
+    font-size: 1rem;
+    height: 55px;
+    padding-left: 1rem;
+    border: 1px solid #041222;
+    background-color:rgb(167, 245, 173);
+    color: #041222;
 }
 
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 1.5rem;
 }
 
 .submit{
-    margin-top: 15px;
+    margin-top: 1rem;
 }
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   font-size: 13px;

@@ -43,10 +43,23 @@
         $("#mainNav").removeClass("navbar-light");
       }
     };
+
+    // Magnific Pop Up Initialization
+
+    $('.image-popup-link').magnificPopup({
+      type: 'image'
+      // other options
+    });
+
+
+    // Init AOS
+    AOS.init();
     // Collapse now if page is not at top
     navbarCollapse();
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
+
+
   
   })(jQuery); // End of use strict
   
