@@ -3,9 +3,22 @@
 
 /* Large Devices, Wide Screens */
 @media (min-width : 1200px) {
-	.dropdown i{
-		display: none;
-	}
+    .nav-item .active {
+        text-align: center;
+        padding: 0.25rem;
+        background-color: aquamarine;
+        -webkit-box-shadow: 2px 1px 3px aquamarine;
+        box-shadow:  2px 1px 3px aquamarine;
+    }
+
+    .active {
+        border-radius: 5px;
+        padding: 0.25rem;
+    }
+
+    .navbar-light .navbar-nav{
+        background: transparent;
+    }
 }
 
 
@@ -16,32 +29,19 @@
         color: rgba(0,0,0,.5);
         border-color: rgba(0,0,0,.1);
         padding: 10px 10px;
-         border-radius: 0px;
+        border-radius: 0px;
     }
     
-    .navbar-nav{
-        background: rgb(189, 42, 42);
-    }
-    
-    .navbar-light .navbar-nav{
-        background: #fff;
+    .navbar-nav .nav-item {
+        text-align: center;
+        background: azure;
+        padding: 0.25rem 0;
+        }
     }
 
    .navbar-light .navbar-toggler-icon-bar{
        background: #fff;
        height: auto;
-    }
-    
-/*================
-     FEATURE
-    =========================*/
-    
-    .feature-block{
-        margin-bottom: 40px;
-    }
-    
-    .about-img,.about-content-2,.footer-link{
-        margin-bottom: 30px;
     }
 }
 
@@ -52,11 +52,7 @@
         color: rgba(0,0,0,.5);
         border-color: rgba(0,0,0,.1);
         padding: 10px 10px;
-         border-radius: 0px;
-    }
-    
-    .navbar-nav{
-        background: rgb(189, 42, 42);
+        border-radius: 0px;
     }
     
     .navbar-light .navbar-nav{
@@ -66,20 +62,7 @@
    .navbar-light .navbar-toggler-icon-bar{
        background: #fff;
        height: auto;
-    }
-    
-/*================
-     FEATURE
-    =========================*/
-    
-    .feature-block{
-        margin-bottom: 40px;
-    }
-    
-    .about-img,.about-content-2,.footer-link{
-        margin-bottom: 30px;
-    }
-	
+    }	
 }
 
 /* Extra Small Devices, Phones */ 
@@ -89,39 +72,20 @@
         color: rgba(0,0,0,.5);
         border-color: rgba(0,0,0,.1);
         padding: 10px 10px;
-         border-radius: 0px;
+        border-radius: 0px;
     }
-    
-    .navbar-nav{
-        background: rgb(189, 42, 42);
-    }
-    
-    .navbar-light .navbar-nav{
-        background: #fff;
+
+    .navbar-nav .nav-item {
+        text-align: center;
+        background: azure;
+        padding: 0.25rem;
+        }
     }
     
    .navbar-light .navbar-toggler-icon-bar{
        background: #fff;
        height: auto;
     }
-    
-/*================
-     FEATURE
-    =========================*/
-    
-    .feature-block{
-        margin-bottom: 40px;
-    }
-    
-    .about-img,.about-content-2,.footer-link{
-        margin-bottom: 30px;
-    }
-
-    .pricing-block{
-        margin-bottom: 20px;
-        margin-top: 30px;
-    }
-
 }
 
 /* Custom, iPhone Retina */ 
@@ -151,14 +115,52 @@
      FEATURE
     =========================*/
     
-    .feature-block{
-        margin-bottom: 40px;
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    .dropdown i{
+		display: none;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (min-width: 1199px) {
+    .navbar-dark .navbar-nav .nav-link {
+        color: #FFF;
     }
-    .about-img,.about-content-2,.footer-link{
-        margin-bottom: 30px;
+    .navbar-light .navbar-nav .nav-link {
+        color: #424242;
+    }  
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .navbar-dark .navbar-nav .nav-link {
+        color: #424242;
+    }    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    .navbar-dark .navbar-nav .nav-link {
+        color: #424242;
     }
-    .pricing-block{
-        margin-bottom: 30px;
-        margin-top: 30px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    .navbar-dark .navbar-nav .nav-link {
+        color: #424242;
+    }
+    .nav-item .active {
+        text-align: center;
+        padding: 0.25rem;
+        background-color: aquamarine;
     }
 }
