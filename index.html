@@ -117,9 +117,9 @@
                         </p>
 
                         <p class="text-center mb-0" >
-                            <a href="#" target="_blank" class="btn btn-dark">
+                            <button href="#" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
                                 Contact Now
-                            </a>
+                            </button>
                         </p>
                     </div>
                 </div>
@@ -128,7 +128,30 @@
         </div>
         <!-- / .container -->
     </section>
-
+  
+  <!-- Modal Starts Here -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title text-center" id="exampleModalLabel">Sample Title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa minima maiores libero ut consequuntur error, nisi voluptates sequi ducimus officiis.
+                </p>
+            </div>
+            <div class="modal-footer d-flex justify-content-center align-items-center p-3">
+            <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary btn-sm">Save changes</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Modal Ends here -->
     <section class="section" id="feature" data-aos="flip-right">
         <div class="container">
             <div class="row justify-content-center mb-4">
@@ -454,7 +477,6 @@
               <div>
                 <img src="images/work/2.jpg" alt="">
               </div>
-    
               <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium illum suscipit, quam quas fuga illo cupiditate labore eveniet, officia in modi eum consequuntur quis alias delectus hic? Delectus, molestias eaque.</p>
             </div>
             <div class="carousel-item active text-center">
@@ -533,8 +555,7 @@
     </section>
 
 
-    <!-- FOOTER
-    ================================================== -->
+    <!-- Footer -->
     <footer class="top-padding bg-dark">
         <!--Content -->
         <div class="container">

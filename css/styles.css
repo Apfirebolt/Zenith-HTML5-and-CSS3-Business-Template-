@@ -718,4 +718,25 @@ OTHER Styles
     font-size: 22px;
 }
 
+.carousel-item {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
 
+.carousel-item p {
+    position: absolute;
+    height: 30%;
+    opacity:0.8;
+    padding: 1rem;
+    top: 20%;
+    background-color: #041222;
+    color: #FFF;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-weight: 600;
+    font-size: 3rem;
+    width: 50%;
+    margin: auto;
+}
