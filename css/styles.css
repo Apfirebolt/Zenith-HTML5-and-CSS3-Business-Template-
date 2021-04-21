@@ -743,6 +743,7 @@ OTHER Styles
 
 #go-to-top {
     position: fixed;
+    display: none;
     bottom: 20px;
     margin: auto;
     right: 50px;
