@@ -740,3 +740,16 @@ OTHER Styles
     width: 50%;
     margin: auto;
 }
+
+#go-to-top {
+    position: fixed;
+    bottom: 20px;
+    margin: auto;
+    right: 50px;
+    font-size: 2rem;
+    color: #041222;
+    cursor: pointer;
+    border: 1px solid #fff;
+    padding: 1rem;
+    transition: all 1s ease-in-out;
+}

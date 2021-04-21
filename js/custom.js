@@ -22,6 +22,13 @@
           }, 1500, 'easeInOutExpo');
           event.preventDefault();
       });
+
+      $('#go-to-top').bind('click', function(event) {
+        $('html, body').stop().animate({
+            scrollTop: "0px"
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+      });
   });
   
     // Closes responsive menu when a scroll trigger link is clicked
@@ -43,6 +50,18 @@
         $("#mainNav").removeClass("navbar-light");
       }
     };
+
+    
+    $(window).scroll(function() {
+      const scroll = $(window).scrollTop();
+      const goToTop = $('#go-to-top');
+      if (scroll > 200) {
+        goToTop.fadeIn( "slow");
+      } else {
+        goToTop.fadeOut("slow");
+      }
+    })
+     
 
     // Magnific Pop Up Initialization
 
